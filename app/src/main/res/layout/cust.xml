@@ -1,0 +1,83 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="8dp"
+		android:paddingRight="8dp"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="horizontal">
+		<LinearLayout
+			android:id="@+id/linear3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_weight="1">
+			<TextView
+				android:id="@+id/textview1"
+				android:focusable="false"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingLeft="8dp"
+				android:paddingTop="8dp"
+				android:paddingRight="8dp"
+				android:text="TextView"
+				android:textSize="14sp"
+				android:textColor="#000000"
+				android:lines="1" />
+			<LinearLayout
+				android:id="@+id/linear2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+				<ImageView
+					android:id="@+id/imageview1"
+					android:focusable="false"
+					android:layout_width="16dp"
+					android:layout_height="16dp"
+					android:layout_marginLeft="8dp"
+					android:layout_marginBottom="4dp"
+					android:src="@drawable/ic_folder_music"
+					android:scaleType="fitStart" />
+				<ImageView
+					android:id="@+id/imageview2"
+					android:focusable="false"
+					android:layout_width="16dp"
+					android:layout_height="16dp"
+					android:layout_marginLeft="2dp"
+					android:layout_marginBottom="4dp"
+					android:padding="2dp"
+					android:src="@drawable/ic_heart_empty"
+					android:scaleType="fitCenter" />
+				<TextView
+					android:id="@+id/textview2"
+					android:focusable="false"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="8dp"
+					android:paddingRight="8dp"
+					android:paddingBottom="8dp"
+					android:text="TextView"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:lines="1"
+					android:layout_weight="1" />
+			</LinearLayout>
+		</LinearLayout>
+		<ImageView
+			android:id="@+id/imageview3"
+			android:focusable="false"
+			android:layout_width="40dp"
+			android:layout_height="match_parent"
+			android:background="@android:color/transparent"
+			android:src="@drawable/ic_music_blue"
+			android:scaleType="centerCrop" />
+	</LinearLayout>
+</LinearLayout>
